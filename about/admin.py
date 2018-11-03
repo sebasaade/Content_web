@@ -1,8 +1,8 @@
 from django.contrib import admin
-from .models import About
+from .models import Post
 
 # Register your models here.
-class AboutAdmin(admin.ModelAdmin):
+class PostAdmin(admin.ModelAdmin):
     readonly_fields = ('created_date', 'updated_date')
 
-admin.site.register(About, AboutAdmin)
+admin.site.register(Post, PostAdmin)

@@ -1,0 +1,15 @@
+astroid==1.6.4
+certifi==2018.4.16
+Django==2.0.2
+django-ckeditor==5.5.0
+django-js-asset==1.1.0
+isort==4.3.4
+lazy-object-proxy==1.3.1
+mccabe==0.6.1
+Pillow==5.1.0
+pylint==1.9.1
+pylint-django==0.11.1
+pylint-plugin-utils==0.2.6
+pytz==2018.4
+six==1.11.0
+wrapt==1.10.11

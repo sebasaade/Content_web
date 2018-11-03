@@ -1,4 +1,4 @@
 from django.apps import AppConfig
 
-class AboutConfig(AppConfig):
-    name = 'about'
+class BlogConfig(AppConfig):
+    name = 'Blog'
