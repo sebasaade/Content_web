@@ -1,7 +1,9 @@
 from django.shortcuts import render
-from .models import Post
+from about.models import Post
+from portfolio.models import Project
 
-# Create your views here.
-def blog(request):
-    posts = Post.objects.all()
-    return render(request, 'about/home.html', {'posts': posts})
+def new_view(request):
+    posts = Post.objects.all() 
+    projects = Project.objects.all()
+    
+    return render(request, 'about/home.html', {'posts': posts,'projects':projects})

@@ -1,5 +1,5 @@
 from django.db import models
-from django.utils import timezone
+
 
 # Create your models here.
 class Post(models.Model):
@@ -14,6 +14,4 @@ class Post(models.Model):
         ordering = ['-created_date']
     
     def __str__(self):
-        if self.title==None:
-            return "ERROR-TITLE IS NULL"
         return self.title
