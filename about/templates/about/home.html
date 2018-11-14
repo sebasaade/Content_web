@@ -9,12 +9,12 @@
     <meta name="keywords" content="Diseño Web, La Plata">
     <meta name=”google” content=”nositelinkssearchbox”>
 
-    <title>East Side | Diseño web </title>
+    <title> CONTENT | Diseño web </title>
 
     {% load static %}
 
     <!-- Bootstrap core CSS -->
-    <link href="{% static 'about/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'about/vendor/bootstrap/css/bootstrap.css' %}" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
     <link href="{% static 'about/vendor/fontawesome-free/css/all.min.css' %}" rel="stylesheet" type="text/css">
@@ -34,7 +34,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="{% url 'home' %}">East Side Design</a>
+        <a class="navbar-brand js-scroll-trigger" href="{% url 'home' %}"><img src={% static 'about/img/logo_content.png' %}></a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -144,7 +144,7 @@
             {% for project in projects %}
               <div class="col-lg-4 col-sm-6">
                 {% if project.link %}
-                <a class="portfolio-box" href="{{project.link}}">
+                <a class="portfolio-box" href="{{project.link}}" target="_blank">
                 {% endif%}
                   <img class="img-fluid" src="{{project.image.url}}" alt="">
                   <div class="portfolio-box-caption">
@@ -172,15 +172,25 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-4 ml-auto text-center">
-            <i class="fas fa-phone fa-2x mb-3 sr-contact-1"></i>
-            <p>221-585-0184</p>
+          <div class="col-lg-2 ml-auto text-center">
+            <a href="http://t.me/sebasaade_bot" title="@content_sitiosweb" target="_blank">
+              <i class="fab fa-telegram fa-2x mb-3 sr-contact-1"></i>
+            </a>
           </div>
-          <div class="col-lg-4 mr-auto text-center">
-            <i class="fas fa-envelope fa-2x mb-3 sr-contact-2"></i>
-            <p>
-              <a href="mailto:your-email@your-domain.com">sebasaade@gmail.com</a>
-            </p>
+          <div class="col-lg-2 ml-auto text-center">
+              <a href="https://www.facebook.com/contentsitiosweb" title="@contentsitiosweb" target="_blank">
+                <i class="fab fa-facebook-square fa-2x mb-3 sr-contact-1"></i>
+              </a>
+            </div>
+            <div class="col-lg-2 ml-auto text-center">
+              <a href="https://www.instagram.com/content.sitiosweb/" title="@content.sitiosweb" target="_blank">
+                <i class="fab fa-instagram fa-2x mb-3 sr-contact-1"></i>
+              </a>
+            </div>
+          <div class="col-lg-2 mr-auto text-center">
+              <a href="mailto:content.sitiosweb@gmail.com" title="content.sitiosweb@gmail.com">
+                <i class="fas fa-envelope fa-2x mb-3 sr-contact-2"></i>
+          </a>
           </div>
         </div>
       </div>
@@ -193,7 +203,7 @@
     <!-- Plugin JavaScript -->
     <script src="{% static 'about/vendor/jquery-easing/jquery.easing.min.js' %}"></script>
     <script src="{% static 'about/vendor/scrollreveal/scrollreveal.min.js' %}" ></script>
-    <script src="{% static 'about/vendor/magnific-popup/jquery.magnific-popup.min.js' %}"></script>
+    <!--<script src="{% static 'about/vendor/magnific-popup/jquery.magnific-popup.min.js' %}"></script>-->
 
     <!-- Custom scripts for this template -->
     <script src="{% static 'about/js/creative.min.js' %}"></script>
